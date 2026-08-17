@@ -222,6 +222,10 @@
     font-size: 18px;
   }
 
+  .mje-nav__tag {
+    display: none;
+  }
+
   .mje-nav__toggle {
     display: flex;
   }
