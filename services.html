@@ -37,11 +37,12 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
+  max-width: 100%;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   touch-action: pan-x pan-y;
   font-family: var(--font-primary);
   font-size: var(--text-base);
@@ -49,6 +50,7 @@ body {
   color: var(--color-gray-900);
   background-color: var(--color-white);
   width: 100%;
+  max-width: 100%;
   position: relative;
 }
 
@@ -530,6 +532,7 @@ ol {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-6);
   font-size: var(--text-sm);
@@ -538,6 +541,9 @@ ol {
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: nowrap;
 }
 .btn-primary {
   background: var(--gradient-primary);
@@ -2584,10 +2590,20 @@ ol {
   }
   .hero-cta {
     flex-direction: column;
+    width: min(100%, 360px);
+    margin: 0 auto var(--space-8);
   }
   .hero-cta .btn {
     width: 100%;
+    max-width: 100%;
     justify-content: center;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    white-space: normal;
+  }
+  .btn {
+    white-space: normal;
+    word-break: break-word;
   }
   .map-coords {
     flex-direction: column;

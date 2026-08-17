@@ -69,6 +69,8 @@
   text-decoration: none;
   color: var(--mje-nav-ink);
   white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .mje-nav__mark {
@@ -216,6 +218,7 @@
 
   .mje-nav__inner {
     padding: 12px 14px 12px 22px;
+    gap: 12px;
   }
 
   .mje-nav__mark {
