@@ -1,4 +1,4 @@
-/* ============================================================
+/* 🎨 The code is dressing up this rule:  ============================================================
    M.A.R.J.E.N.E — navigation.js
    Glass navbar (scroll state + mobile menu) and the animated
    hero stat counters. Self-contained, no dependencies. Safe to
@@ -12,7 +12,7 @@
 (function () {
   'use strict';
 
-  /* ------------------------------------------------------------
+  /* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
      1) GLASS NAVBAR — scroll state
      Toggles data-state="top" | "scrolled" on the header, which
      css/navigation.css uses to fade the frosted-glass background
@@ -39,7 +39,7 @@
     applyScrollState(); // set correct state on load (e.g. mid-scroll reload)
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    /* ------------------------------------------------------------
+    /* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
        2) MOBILE MENU
        Toggles data-open on the link list + aria attributes on the
        trigger button. Closes on: link click, Escape, outside
@@ -52,11 +52,11 @@
       const isOpen = () => links.getAttribute('data-open') === 'true';
       let lockedScrollY = 0;
 
-      // Real scroll-lock: pins <body> with position:fixed instead of
-      // just setting overflow:hidden. overflow:hidden alone doesn't
-      // stop iOS Safari's momentum/rubber-band scroll, which is what
-      // makes a fixed, blurred menu panel flicker transparent as the
-      // page keeps moving underneath it.
+      // 😅 Tiny code note with big feelings:  Real scroll-lock: pins <body> with position:fixed instead of
+      // 😅 Tiny code note with big feelings:  just setting overflow:hidden. overflow:hidden alone doesn't
+      // 😅 Tiny code note with big feelings:  stop iOS Safari's momentum/rubber-band scroll, which is what
+      // 😅 Tiny code note with big feelings:  makes a fixed, blurred menu panel flicker transparent as the
+      // 😅 Tiny code note with big feelings:  page keeps moving underneath it.
       const lockScroll = () => {
         lockedScrollY = window.scrollY;
         document.body.style.top = `-${lockedScrollY}px`;
@@ -108,7 +108,7 @@
       });
     }
 
-    /* ------------------------------------------------------------
+    /* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
        3) ACTIVE LINK
        Marks the link matching the current page with aria-current,
        so it doesn't have to be hardcoded per page.
@@ -125,7 +125,7 @@
     });
   }
 
-  /* ------------------------------------------------------------
+  /* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
      4) HERO STAT COUNTERS
      Animates every [data-count] element from 0 up to its target
      once it scrolls into view. Runs independently of the navbar
@@ -178,7 +178,7 @@
       );
       counterEls.forEach((el) => observer.observe(el));
     } else {
-      // Fallback for browsers without IntersectionObserver support
+      // 😅 Tiny code note with big feelings:  Fallback for browsers without IntersectionObserver support
       counterEls.forEach(animateCounter);
     }
   }

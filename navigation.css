@@ -1,4 +1,4 @@
-/* ============================================================
+/* 🎨 The code is dressing up this rule:  ============================================================
    M.A.R.J.E.N.E — css/navigation.css
    Floating, centered glassmorphism navbar.
    ============================================================ */
@@ -12,14 +12,14 @@
   display: flex;
   justify-content: center;
   padding: 20px 24px 0;
-  pointer-events: none; /* only the pill + drawer below are clickable */
+  pointer-events: none; /* 🎨 The code is dressing up this rule:  only the pill + drawer below are clickable */
 
   --mje-nav-accent: var(--color-primary, #dc2626);
   --mje-nav-ink: var(--color-gray-900, #0f0f10);
   --mje-nav-muted: var(--color-gray-500, #64748b);
 }
 
-/* ------------------------------------------------------------
+/* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
    The pill — this is the actual glass surface, centered and
    capped in width so it floats in the middle of the viewport
    instead of stretching edge to edge.
@@ -52,7 +52,7 @@
   }
 }
 
-/* A touch more opaque + a slightly tighter pill once you scroll,
+/* 🎨 The code is dressing up this rule:  A touch more opaque + a slightly tighter pill once you scroll,
    so it reads clearly over any part of the page. */
 .mje-nav[data-state='scrolled'] .mje-nav__inner {
   background: rgba(255, 255, 255, 0.85);
@@ -147,7 +147,7 @@
   color: #fff;
 }
 
-/* ------------------------------------------------------------
+/* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
    Hamburger toggle — hidden on desktop
    ------------------------------------------------------------ */
 .mje-nav__toggle {
@@ -202,7 +202,7 @@
   top: 16px;
 }
 
-/* ------------------------------------------------------------
+/* 🎨 The code is dressing up this rule:  ------------------------------------------------------------
    Mobile — the pill shrinks to logo + toggle, and the links
    become their own centered glass dropdown floating just below
    the pill (not a full-height drawer). It carries a high, fixed
@@ -295,7 +295,7 @@
   }
 }
 
-/* Applied to <body> by navigation.js while the mobile menu is
+/* 🎨 The code is dressing up this rule:  Applied to <body> by navigation.js while the mobile menu is
    open — locks the page in place with `position: fixed` rather
    than relying on overflow:hidden alone, which iOS Safari can
    ignore during momentum scroll. */
